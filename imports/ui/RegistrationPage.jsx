@@ -32,7 +32,7 @@ class RegistrationPage extends React.Component {
             Last Name
               </Col>
           <Col sm={6}>
-            <FormControl type="text" value={this.state.firstName} onChange={this.onLastNameChange.bind(this)} />
+            <FormControl type="text" value={this.state.lastName} onChange={this.onLastNameChange.bind(this)} />
           </Col>
         </FormGroup>
 
@@ -50,7 +50,7 @@ class RegistrationPage extends React.Component {
             Username
               </Col>
           <Col sm={6}>
-            <FormControl type="text" value={this.state.email} onChange={this.onUsernameChange.bind(this)} />
+            <FormControl type="text" value={this.state.username} onChange={this.onUsernameChange.bind(this)} />
           </Col>
         </FormGroup>
 
