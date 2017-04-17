@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { browserHistory, Link } from 'react-router';
-import { Modal, Button, Col, Form, FormGroup, FormControl, ControlLabel, FieldGroup, Alert } from "react-bootstrap";
+import { Modal, Button, Col, Form, FormGroup, FormControl, ControlLabel, FieldGroup } from "react-bootstrap";
 import { Accounts } from 'meteor/accounts-base';
 
 export default class RegistrationPage extends Component {
@@ -131,7 +131,7 @@ export default class RegistrationPage extends Component {
           error: err.reason
         });
       } else {
-         
+         browserHistory.push('/login');
       }
     });
 
